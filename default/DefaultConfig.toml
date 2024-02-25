@@ -1,0 +1,41 @@
+['$HOME']
+linux.default = '$HOME'
+windows.default = '%USERPROFILE%'
+
+[helix]
+files = ['config.toml', 'languages.toml']
+# files = '*'
+# files = [['config.toml', '.config/heilx'], 'languages.toml']
+
+[helix.linux]
+# copyTo = ['~/.config/helix']
+copyTo = ['.config/helix']
+# copyTo = '*'
+symbolic = true
+
+[helix.windows]
+copyTo = ['$AppData/helix']
+
+# files specific to operating system
+# files = ''
+
+[git]
+# if config is defined, file at config will override default values
+config = 'git/config.toml'
+
+[starship]
+files = '*'
+
+[starship.linux]
+copyTo = ['.config']
+
+[starship.windows]
+copyTo = ['.config']
+
+
+# - os-name: Windows
+#   copyTo: '%userprofile%\.config\'
+#   files: ['starship.toml']
+# - os-name: Linux
+#   copyTo: '~/.config/'
+#   files: ['starship.toml']

@@ -1,0 +1,9 @@
+files = '.gitconfig'
+
+[linux]
+copyTo = ''
+symbolic = true
+
+[windows]
+copyTo = ''
+symbolic = true
